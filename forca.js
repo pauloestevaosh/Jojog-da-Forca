@@ -6,7 +6,7 @@ var todasAsLetras=[]
 var letra
 
 const listapalavras = [                                                      //lista os produtos para o jogo da forca
-    "DRONE",  "ALEXA", "SMARTWATCH", "SMARTPHONE", "PROJETOR", "NOTEBOOK"
+    "DRONE",  "ALEXA", "SMARTWATCH", "SMARTPHONE", "PROJETOR", "NOTEBOOK, HEADSET"
 ];
 
 const dicas = [
