@@ -26,16 +26,15 @@ body {
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
-
+    color: blanchedalmond;
 }
-#img{
-    background-image: url("1.png");
+#imagem{
+    background-image: url("HomemDeFerroFundo.png");
     background-repeat: no-repeat;
     width: 253px;
     height: 502px;
     
 }
-
 
 
 /* h1{
