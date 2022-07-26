@@ -6,7 +6,7 @@ var todasAsLetras=[]
 var letra
 
 const listapalavras = [                                                      //lista os produtos para o jogo da forca
-    "DRONE",  "ALEXA", "SMARTWATCH", "SMARTPHONE", "PROJETOR", "NOTEBOOK, HEADSET"
+    "DRONE",  "ALEXA", "SMARTWATCH", "SMARTPHONE", "PROJETOR", "NOTEBOOK", "HEADSET"
 ];
 
 const dicas = [
@@ -131,7 +131,7 @@ function validaLetras(){                                                   //Val
     }
 
     if (JSON.stringify(palavraTela)==JSON.stringify(letrasCorretas)) {               // valida que a palavra está formada corretamente
-        document.getElementById("img").style.background = "url('./homem de ferro base.jpg')";
+        document.getElementById("imagem").style.background = "url('./homem de ferro base.jpg')";
         return alert ("voce venceu!")
         
         
@@ -142,22 +142,22 @@ function validaLetras(){                                                   //Val
 function sobeImagens(){
     switch(letrasErradas.length+1){
         case 6:
-            document.getElementById("img").style.background = "url('./6.png')";
+            document.getElementById("imagem").style.background = "url('./6.png')";
             break;
         case 5:
-            document.getElementById("img").style.background = "url('./5.png')";
+            document.getElementById("imagem").style.background = "url('./5.png')";
              break;
         case 4:
-            document.getElementById("img").style.background = "url('./4.png')";
+            document.getElementById("imagem").style.background = "url('./4.png')";
              break;
         case 3:
-            document.getElementById("img").style.background = "url('./3.png')";
+            document.getElementById("imagem").style.background = "url('./3.png')";
             break;
         case 2:
-            document.getElementById("img").style.background = "url('./2.png')";
+            document.getElementById("imagem").style.background = "url('./2.png')";
             break;       
         default:
-        document.getElementById("img").style.background = "url('./1.png')";
+        document.getElementById("imagem").style.background = "url('./1.png')";
         break;                 
     }
     
@@ -218,7 +218,7 @@ function mostraDicas(){
 /* function carregaImagemForca(){
     switch(tentativas){
         case 5:
-            document.getElementById("imagem").style.background  = "url('./img/forca01.png')";
+            document.getElementById("imagem").style.background  = "url('./imagem/forca01.png')";
             break;
     
     } 

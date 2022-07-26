@@ -28,13 +28,18 @@ body {
     flex-direction: column;
 
 }
-#img{
-    background-image: url("1.png");
+#imagem{
+    background-image: url("HomemDeFerroFundo.png");
     background-repeat: no-repeat;
     width: 253px;
     height: 502px;
+    
 }
-
+ 
+#HomemDeFerro{
+    max-width: 100%;
+   
+}
 
 
 /* h1{
