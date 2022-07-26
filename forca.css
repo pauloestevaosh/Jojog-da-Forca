@@ -51,6 +51,7 @@ body {
 #palavraFormada{
     color: blanchedalmond;
     text-align: center;
+    margin-top: 50px;
     margin-bottom: 20px;
     
 }
@@ -60,7 +61,7 @@ body {
 }
 #jogar{
     text-align: center;
-    margin: 50px;
+    margin-top: 50px;
    
 }
 #botaoJogar{
