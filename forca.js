@@ -127,7 +127,11 @@ function validaLetras(){                                                   //Val
 
     }
     else{
+        var imagem = document.querySelector("#HomemDeFerro");
+        imagem.setAttribute('src', 'voce perdeu.png');
+
         return alert ("o jogo acabou")
+        
     }
 
     if (JSON.stringify(palavraTela)==JSON.stringify(letrasCorretas)) {               // valida que a palavra está formada corretamente
