@@ -58,7 +58,6 @@ console.log(sorteada)
 var letrasCorretas = sorteada.split('')                                      //quebra a string sorteada em um vetor de letras
 
 
-
 function jogar (){                                                          //Acionada pelo botão de iniciar o jogo
 
 palavraTela=Array(letrasCorretas.length).fill("___")                        //Carrega a Array com ___ de acordo com o tamanho da palavra sorteada
@@ -68,6 +67,35 @@ document.getElementById("palavraFormada").innerHTML = palavraTela.join("  ");   
     
 }
 
+function habBotao(){
+    document.getElementById("A").disabled = false;
+    document.getElementById("B").disabled = false;
+    document.getElementById("C").disabled = false;
+    document.getElementById("D").disabled = false;
+    document.getElementById("E").disabled = false;
+    document.getElementById("F").disabled = false;
+    document.getElementById("G").disabled = false;
+    document.getElementById("H").disabled = false;
+    document.getElementById("I").disabled = false;
+    document.getElementById("J").disabled = false;
+    document.getElementById("K").disabled = false;
+    document.getElementById("L").disabled = false;
+    document.getElementById("M").disabled = false;
+    document.getElementById("N").disabled = false;
+    document.getElementById("O").disabled = false;
+    document.getElementById("P").disabled = false;
+    document.getElementById("Q").disabled = false;
+    document.getElementById("R").disabled = false;
+    document.getElementById("S").disabled = false;
+    document.getElementById("T").disabled = false;
+    document.getElementById("U").disabled = false;
+    document.getElementById("V").disabled = false;
+    document.getElementById("W").disabled = false;
+    document.getElementById("X").disabled = false;
+    document.getElementById("Y").disabled = false;
+    document.getElementById("Z").disabled = false;
+
+}
 
 function acaoBotao(clicado) {                                              //Retorna o valor da letra clicada e chama outra função
     letra=clicado
