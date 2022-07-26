@@ -75,34 +75,6 @@ validaLetras()
 
 }
 
-function sobeImagens(){
-    switch(letrasErradas.length){
-        case 4:
-            document.getElementById("img").style.background = "url('./6.png')";
-            break;
-        case 3:
-            document.getElementById("img").style.background = "url('./5.png')";
-             break;
-        case 2:
-            document.getElementById("img").style.background = "url('./4.png')";
-             break;
-        case 1:
-            document.getElementById("img").style.background = "url('./3.png')";
-            break;
-        case 0:
-            document.getElementById("img").style.background = "url('./2.png')";
-            break;       
-        default:
-        document.getElementById("img").style.background = "url('./1.png')";
-        break;                 
-    }
-    
-
-}
-
-
-
-
 
 function validaLetras(){                                                   //Valida se as letras estão corretas ou erradas
 
@@ -123,8 +95,8 @@ function validaLetras(){                                                   //Val
             else{
                 
                 erradas ++
-                sobeImagens();    
-                console.log(letrasErradas.length);
+                   
+                console.log(letrasErradas.length+1);
             }
             
 
@@ -149,7 +121,7 @@ function validaLetras(){                                                   //Val
 
         document.getElementById("erradas").innerHTML =  letrasErradas;
 
-
+        sobeImagens(); 
 
 
     }
@@ -165,6 +137,30 @@ function validaLetras(){                                                   //Val
     } 
 
    
+}
+function sobeImagens(){
+    switch(letrasErradas.length+1){
+        case 6:
+            document.getElementById("img").style.background = "url('./6.png')";
+            break;
+        case 5:
+            document.getElementById("img").style.background = "url('./5.png')";
+             break;
+        case 4:
+            document.getElementById("img").style.background = "url('./4.png')";
+             break;
+        case 3:
+            document.getElementById("img").style.background = "url('./3.png')";
+            break;
+        case 2:
+            document.getElementById("img").style.background = "url('./2.png')";
+            break;       
+        default:
+        document.getElementById("img").style.background = "url('./1.png')";
+        break;                 
+    }
+    
+
 }
 var clique = 1; 
  
