@@ -1,3 +1,4 @@
+// aqui é o lucas
 var sorteada;
 var letrasErradas=[]
 var palavraTela = []
