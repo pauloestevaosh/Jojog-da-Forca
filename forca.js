@@ -132,32 +132,47 @@ function validaLetras(){                                                   //Val
 
     if (JSON.stringify(palavraTela)==JSON.stringify(letrasCorretas)) {               // valida que a palavra está formada corretamente
         document.getElementById("imagem").style.background = "url('./homem de ferro base.jpg')";
+        
         return alert ("voce venceu!")
         
-        
     } 
-
+    
+    
    
 }
+
+
+
+
 function sobeImagens(){
+
+
+
     switch(letrasErradas.length+1){
         case 6:
-            document.getElementById("imagem").style.background = "url('./6.png')";
+            var imagem = document.querySelector("#HomemDeFerro");
+            imagem.setAttribute('src', '6.png');
             break;
         case 5:
-            document.getElementById("imagem").style.background = "url('./5.png')";
+            var imagem = document.querySelector("#HomemDeFerro");
+            imagem.setAttribute('src', '5.png');
              break;
         case 4:
-            document.getElementById("imagem").style.background = "url('./4.png')";
+            var imagem = document.querySelector("#HomemDeFerro");
+            imagem.setAttribute('src', '4.png');
              break;
         case 3:
-            document.getElementById("imagem").style.background = "url('./3.png')";
+            var imagem = document.querySelector("#HomemDeFerro");
+            imagem.setAttribute('src', '3.png');
             break;
         case 2:
-            document.getElementById("imagem").style.background = "url('./2.png')";
+            var imagem = document.querySelector("#HomemDeFerro");
+            imagem.setAttribute('src', '2.png');
+            //document.getElementById("imagem").style.background = "url('./2.png')";
             break;       
         default:
-        document.getElementById("imagem").style.background = "url('./1.png')";
+            var imagem = document.querySelector("#HomemDeFerro");
+            imagem.setAttribute('src', 'HomemDeFerroFundo.png');
         break;                 
     }
     
