@@ -1,0 +1,85 @@
+*{  
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.alfabeto {
+    width: 30px;
+    height: 30px;
+    margin: 3px;
+    border-radius: 10px;
+    font-weight: 600;
+    
+}
+body {
+    width: 100vw; 
+    height: 90vh; 
+    margin-top: 10px; 
+    background-color: rgb(89, 100, 100)
+}
+
+#cabecalho{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
+#img{
+    background-image: url("1.png");
+    background-repeat: no-repeat;
+    width: 253px;
+    height: 260px;
+}
+
+
+
+/* h1{
+    color: aliceblue;
+    text-align: center;
+} */
+
+#palavraFormada{
+    color: blanchedalmond;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+.letras{
+    text-align: center;
+
+}
+#jogar{
+    text-align: center;
+    margin: 50px;
+   
+}
+#botaoJogar{
+    font-size: 17px;
+}
+
+#erradas{
+    color: blanchedalmond;
+    margin: 15px;
+    font-size: 20px;
+}
+#textoauxiliar{
+    color: blanchedalmond;
+}
+#lampada{
+    width: 30px;
+}
+#dicas{
+    color: blanchedalmond;
+    margin: 15px;
+    font-size: 20px;
+}
+
+#dicasNumeradas {
+    height: 100px;
+    margin: 25px;
+
+}
