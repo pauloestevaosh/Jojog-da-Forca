@@ -4,6 +4,7 @@ var letrasErradas=[]
 var palavraTela = []
 var todasAsLetras=[]
 var letra
+var PerdaDeDesconto
 
 const listapalavras = [                                                      //lista os produtos para o jogo da forca
     "DRONE",  "ALEXA", "SMARTWATCH", "SMARTPHONE", "PROJETOR", "NOTEBOOK", "HEADSET"
@@ -44,6 +45,12 @@ const dicas = [
     },
     {
         palavra: "NOTEBOOK",
+        dica1:" 1 - lorem ipsum ",
+        dica2:" 2 - lorem ipsum ",
+        dica3:" 3 - lorem ipsum ",
+    },
+    {
+        palavra: "HEADSET",
         dica1:" 1 - lorem ipsum ",
         dica2:" 2 - lorem ipsum ",
         dica3:" 3 - lorem ipsum ",
@@ -125,7 +132,7 @@ function validaLetras(){                                                   //Val
                 
                 erradas ++
                    
-                console.log(letrasErradas.length+1);
+                
             }
             
 
@@ -156,7 +163,7 @@ function validaLetras(){                                                   //Val
     }
     else{
         var imagem = document.querySelector("#HomemDeFerro");
-        imagem.setAttribute('src', 'voce perdeu.png');
+        imagem.setAttribute('src', 'lampada.png');
 
         return alert ("o jogo acabou")
         
@@ -178,12 +185,13 @@ function validaLetras(){                                                   //Val
 
 function sobeImagens(){
 
+    PerdaDeDesconto = letrasErradas.length + clicados
+    console.log (PerdaDeDesconto)
 
-
-    switch(letrasErradas.length+1){
+    switch(PerdaDeDesconto+1){
         case 6:
             var imagem = document.querySelector("#HomemDeFerro");
-            imagem.setAttribute('src', '6.png');
+            imagem.setAttribute('src', 'voce perdeu.png');
             break;
         case 5:
             var imagem = document.querySelector("#HomemDeFerro");
@@ -202,19 +210,20 @@ function sobeImagens(){
             imagem.setAttribute('src', '2.png');
             //document.getElementById("imagem").style.background = "url('./2.png')";
             break;       
-        default:
+        /* default:
             var imagem = document.querySelector("#HomemDeFerro");
             imagem.setAttribute('src', 'HomemDeFerroFundo.png');
-        break;                 
+        break;      */           
     }
     
 
 }
-var clique = 1; 
+var clique = 1;
+var clicados = 0
  
 function mostraDicas(){
    
-    var clicados = clique++
+    clicados = clique++
     var  exibirDicas = document.querySelector("#dicasNumeradas")  
     dicas.forEach(object =>{
         const indexPalavra = dicas.findIndex( (element) => element.palavra == sorteada);
@@ -250,7 +259,7 @@ function mostraDicas(){
 
     });
 
-   
+    console.log (PerdaDeDesconto)
     
 }  
 
