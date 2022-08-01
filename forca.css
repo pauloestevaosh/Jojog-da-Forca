@@ -1,26 +1,270 @@
-*{  
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+body{
+    width: 100vw; 
+    height: 90vh; 
+    background-color: #4f4c4c;
+    
+}
+
+.Titulo{
+    position: relative;
+    width: 1200px;
+    height: 120px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #4f4c4c;
+}
+.box0{
+    
+
 
 }
 
-.alfabeto {
+.botaoJogo{
+   
+}
+
+#opcoes{
+    position: absolute;
+    top: 60px;
+    right: 5%;
+}
+
+
+nav{
+    position: absolute;
+    top: 60px;
+    right: 20%;
+}
+nav li{
+    display: inline;
+    
+    
+    font-size: 22px;
+    padding: 8px 8px;
+    margin: 0 0 0 100px;
+    color: #03e9f4;
+
+
+    font-size: 14px;
+  
+    text-decoration: none;
+  
+    text-transform: uppercase;
+  
+    overflow: hidden;
+  
+    transition: 0.2s;
+  
+    margin-top: 40px;
+  
+    letter-spacing: 4px;
+
+    background-color: rgba(255, 255, 255, 0.11);
+   
+   
+    border-radius: 8px;
+
+    
+
+
+}
+nav li a{
+    text-decoration: none;
+    color: #03e9f4;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+nav li:hover {
+    color: #fff;
+  
+    background: #03e9f4;
+  
+  
+    border-radius: 5px;
+  
+    box-shadow: 0 0 5px #03e9f4,
+  
+                0 0 25px #03e9f4,
+  
+                0 0 50px #03e9f4,
+  
+                0 0 100px #03e9f4;
+  
+  }
+  nav li a:hover {
+    color: #fff;
+  
+   
+  }
+
+
+
+#irparajogo
+{
+    display: inline;
+    
+    
+    font-size: 22px;
+    padding: 8px 8px;
+    margin: 100px;
+    color: #03e9f4;
+
+
+    font-size: 25px;
+  
+    text-decoration: none;
+  
+    text-transform: uppercase;
+  
+    overflow: hidden;
+  
+    transition: 0.2s;
+  
+     
+    letter-spacing: 4px;
+
+    background-color: rgba(255, 255, 255, 0.11);
+   
+   
+    border-radius: 8px;
+}
+  #irparajogo a{
+    text-decoration: none;
+    color: #03e9f4;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+#irparajogo:hover {
+    color: #fff;
+  
+    background: #03e9f4;
+  
+  
+    border-radius: 5px;
+  
+    box-shadow: 0 0 5px #03e9f4,
+  
+                0 0 25px #03e9f4,
+  
+                0 0 50px #03e9f4,
+  
+                0 0 100px #03e9f4;
+  
+  }
+#irparajogo a:hover {
+    color: #fff;
+  
+   
+  }
+
+
+
+
+
+.Produtos{
+    width: 940px;
+    margin: 0 auto;
+
+}
+
+.telaJogo{
+    margin: 0 auto;
+
+}
+
+.Produtos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    background-color: #fffdfd;
+    margin: 1.5% 1.5%;
+    padding: 20px 20px;
+    box-sizing: border-box;
+
+    border: 6px solid #00c2cb;
+    border-radius: 20px;
+    
+}
+.Produtos h2 {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'inter';
+}
+
+.regra{
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'inter';
+    color: #fffdfd;
+
+    margin-top: 5%;
+}
+
+.descricaoJogo{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'inter';
+    color: #fffdfd;
+
+    margin: 5% 15% 0 15%;
+}
+
+.marca{
+    font-style: 16px;
+    font-weight: bold;
+    font-family: 'robot';
+}
+
+.descricao{
+    font-size: 16px;
+    font-family: 'robot';
+}
+
+.preco{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'robot';
+}
+.alfabeto { /*style alfabeto*/
     width: 30px;
     height: 30px;
     margin: 3px;
-    border-radius: 10px;
+    border-radius: 2px 10px;
     font-weight: 600;
-    
+    color: #03e9f4;
+    background-color: rgba(245, 245, 220, 0.185);
+    border-style: none;
 }
-body {
-    width: 100vw; 
-    height: 90vh; 
-    margin-top: 10px; 
-    background-color: rgb(89, 100, 100)
+.alfabeto:hover {
+  
+    background: #03e9f4;
+  
+    color: #fff;
+  
+    border-radius: 2px 10px;
+  
+    box-shadow: 0 0 5px #03e9f4,
+  
+                0 0 25px #03e9f4,
+  
+                0 0 50px #03e9f4,
+  
+                0 0 100px #03e9f4;
+  
+
+
 }
 
-#cabecalho{
+#cabecalho{ /*style container img*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,17 +272,34 @@ body {
     flex-direction: column;
     color: blanchedalmond;
 }
-#imagem{
+.box1{
+    display: flex;
+    justify-content: space-around;
+    align-items: top;
+    box-sizing: border-box;
+}
+.box2{
+    flex-grow: 1;
+    flex-direction: column;
+    margin-left: 130px;
+}
+#imagem{ /*div img*/
    /* background-image: url("HomemDeFerroFundo.png"); */
     background-repeat: no-repeat;
-    width: 253px;
-    height: 502px;
-    padding: 1%;
+    width: 180px;
+    padding: 0.5%;
+    display:flex;
+    align-items: top;
     
+    justify-content: center;
+
+    flex-grow: 4;
+    
+   
 }
  
-#HomemDeFerro{
-    max-width: 100%;
+#HomemDeFerro{ /*style homem de ferro*/
+    max-width: 50%;
    
 }
 
@@ -47,46 +308,108 @@ body {
     color: aliceblue;
     text-align: center;
 } */
+.box3{
+    width: 410px;
+    
+    margin-right: 30px;
 
-#palavraFormada{
-    color: blanchedalmond;
+}
+#palavraFormada{ /*style palavra*/
+    color: #03e9f4;
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'robot';
+    text-shadow:0 0 5px #03e9f4,
+  
+    0 0 25px #03e9f4,
+
+    0 0 50px #03e9f4,
+
+    0 0 100px #03e9f4; 
+
+
     
 }
-.letras{
+.letras{  /*style alinhamento letras*/
     text-align: center;
 
+
 }
-#jogar{
+#jogar{ /*div botão jogar*/
     text-align: center;
     margin-top: 50px;
    
 }
-#botaoJogar{
+#botaoJogar{ /*fonte botão*/
     font-size: 17px;
 }
 
-#erradas{
+#erradas{ /*style letras erradas*/
     color: blanchedalmond;
     margin: 15px;
     font-size: 20px;
+    display: inline;
+    font-family: 'inter';
+    
+    
+
 }
+#msgErro{
+    color: blanchedalmond;
+    margin: 15px;
+    font-size: 20px;
+
+}
+
 #textoauxiliar{
     color: blanchedalmond;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'robot';
+    margin: 15px;
+    display: inline;
+    
 }
-#lampada{
-    width: 30px;
+#lampada{ /*tamanho imagem dica*/
+    width: 20px;
 }
-#dicas{
+#dicas{ /*style dicas*/
     color: blanchedalmond;
     margin: 15px;
+    margin-top: 30px;
+
     font-size: 20px;
+    font-family: 'robot';
+ 
 }
 
 #dicasNumeradas {
-    height: 100px;
-    margin: 25px;
+    height: 150px;
+    width: 300px;
 
+    border: 1px solid #00c2cb;
+    border-radius: 10px;
+    padding: 5px;
+    
 }
+#desconto{
+
+    color: #03e9f4;
+    margin: 15px;
+    margin:  50px 10px 0px 18px ;
+
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'robot';
+    text-shadow:0 0 5px #03e9f4,
+  
+    0 0 25px #03e9f4,
+
+    0 0 50px #03e9f4,
+
+    0 0 100px #03e9f4; 
+}
+

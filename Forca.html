@@ -1,90 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script type="text/javascript" src="forca.js"></script>
-    <link rel="stylesheet" href="forca.css">
-    <title>Teste forca</title>
-</head>
-<body>
-<div id="cabecalho">
-    <h1>Título Jogo da Forca</h1>
-            <div id="imagem">
-           <img id = "HomemDeFerro" src="HomemDeFerroFundo.png" alt="">
+<html lang="br-pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="widh=divece-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./reset.css">
+        <link rel="stylesheet" type="text/css" href="./Forca.css">
+        <script type="text/javascript" src="./Forca.js"></script>
+        <title>GroupSix</title>
+
+    </head>
+
+
+    <body>
+        <header>
+            <div class="Titulo">
+                <img src="Logo.jpeg" width="250px">
+
+                <nav id="opcoes">
+                    <ul >
+                        <li class="ofDia">Oferta do Dias</li>
+                        <li class="maisVendidos">Mais Vendidos</li>
+                        <li class="botaoJogo"><a href="DescricaoJogo.htm">Jogue e Ganhe até 50%</a></li>
+                    </ul>
+                </nav>
             </div>
-</div>  
+        </header>
 
-<div id= "palavraSOrteada"> 
-    
-</div>
-
-<div id= "palavraFormada"> 
-    Palavra 
-</div>
-
-
-
-<div class="letras" >
-
-<button id="A" class="alfabeto" onclick="this.disabled = true; acaoBotao('A')" disabled>A</button>
-<button id="B" class="alfabeto" onclick="this.disabled = true; acaoBotao('B')" disabled>B</button>
-<button id="C" class="alfabeto" onclick="this.disabled = true; acaoBotao('C')" disabled>C</button>
-<button id="D" class="alfabeto" onclick="this.disabled = true; acaoBotao('D')" disabled>D</button>
-<button id="E" class="alfabeto" onclick="this.disabled = true; acaoBotao('E')" disabled>E</button>
-<button id="F" class="alfabeto" onclick="this.disabled = true; acaoBotao('F')" disabled>F</button>
-<button id="G" class="alfabeto" onclick="this.disabled = true; acaoBotao('G')" disabled>G</button>
-<button id="H" class="alfabeto" onclick="this.disabled = true; acaoBotao('H')" disabled>H</button>
-<button id="I" class="alfabeto" onclick="this.disabled = true; acaoBotao('I')" disabled>I</button>
-<button id="J" class="alfabeto" onclick="this.disabled = true; acaoBotao('J')" disabled>J</button>
-<button id="K" class="alfabeto" onclick="this.disabled = true; acaoBotao('K')" disabled>K</button>
-<button id="L" class="alfabeto" onclick="this.disabled = true; acaoBotao('L')" disabled>L</button>
-</div>
-
-<div class="letras">
-<button id="M" class="alfabeto" onclick="this.disabled = true; acaoBotao('M')" disabled>M</button>
-<button id="N" class="alfabeto" onclick="this.disabled = true; acaoBotao('N')" disabled>N</button>
-<button id="O" class="alfabeto" onclick="this.disabled = true; acaoBotao('O')" disabled>O</button>
-<button id="P" class="alfabeto" onclick="this.disabled = true; acaoBotao('P')" disabled>P</button>
-<button id="Q" class="alfabeto" onclick="this.disabled = true; acaoBotao('Q')" disabled>Q</button>
-<button id="R" class="alfabeto" onclick="this.disabled = true; acaoBotao('R')" disabled>R</button>
-<button id="S" class="alfabeto" onclick="this.disabled = true; acaoBotao('S')" disabled>S</button>
-<button id="T" class="alfabeto" onclick="this.disabled = true; acaoBotao('T')" disabled>T</button>
-<button id="U" class="alfabeto" onclick="this.disabled = true; acaoBotao('U')" disabled>U</button>
-<button id="V" class="alfabeto" onclick="this.disabled = true; acaoBotao('V')" disabled>V</button>
-<button id="W" class="alfabeto" onclick="this.disabled = true; acaoBotao('W')" disabled>W</button>
-<button id="X" class="alfabeto" onclick="this.disabled = true; acaoBotao('X')" disabled>X</button>
-<button id="Y" class="alfabeto" onclick="this.disabled = true; acaoBotao('Y')" disabled>Y</button>
-<button id="Z" class="alfabeto" onclick="this.disabled = true; acaoBotao('Z')" disabled>Z</button>
-</div>
-
-<div id="textoauxiliar" > Letras Erradas: </div>
-<div id="erradas"> </div>
-
-
-<div id="jogar">
-    <button id="botaoJogar" onclick="this.disabled = true; jogar();habBotao()" >Iniciar Jogo</button>
-</div>
-
-<div id="dicas">
-    <div id="tituloDicas">
-    
-    <img id = "lampada" src="lampada.png" alt=""> 
-
-    Dicas:
-    
-    </div>
-
-    <div id="dicasNumeradas">
-        <!-- Aqui irão ser adicionadas as dicas via JavaScript-->
-    </div>
-
-    <button id="botaoDica" onclick="mostraDicas()" >Quero um dica!</button>
-
-
-</div>
-
-
-</body>
+        <main>
+            <ul class="Produtos">
+                <li>
+                    <h2>Echo Dot (4ª Geração)</h2>
+                    <img src="Echo.jpg" width="200spx">
+                    <p class="marca">Echo Dot (4ª Geração)</p>
+                    <p class="descricao">Controle músicas apenas com sua voz.</p>
+                    <p class="descricao">Controle sua casa inteligente</p>
+                    <p class="descricao">Desenvolvido para proteger sua privacidade</p>
+                    <p class="preco">R$ 379,05</p>
+                </li>
+                <li>
+                    <h2>Apple Watch Series 3</h2>
+                    <img src="Apple Watch Series 3.jpg" width="156spx">
+                    <p class="marca">Marca:	Apple</p>
+                    <p class="descricao">Número do modelo: MTEY2BZ/A</p>
+                    <p class="descricao">GPS: GPS</p>
+                    <p class="descricao">Características especiais:	Notificações</p>
+                    <p class="preco">R$ 1748,00</p>
+                </li>
+                <li>
+                    <h2>Drone com camera HD 4k</h2>
+                    <img src="Drone com camera HD 4k.jpg"  width="205spx">
+                    <p class="marca">Drone Camera 4k</p>
+                    <p class="descricao">2 Baterias</p>
+                    <p class="descricao">Siga me</p> 
+                    <p class="descricao">Localização por GPS</p>
+                    <p class="preco">R$ 549,00</p>
+                </li>
+                <li>
+                    <h2>Robô Aspirador de Pó WAP</h2>
+                    <img src="Robô Aspirador de Pó WAP.jpg" width="120spx">
+                    <p class="marca">Marca:	WAP</p>
+                    <p class="descricao">Cor:	Preto e Cinza</p>
+                    <p class="descricao">Recomendação de superfície:	Interna</p>
+                    <p class="descricao">Tipo de controlador:	Controle de mão, Amazon Alexa, Assistente do Google, IOS</p>
+                    <p class="preco">R$ 1783,41</p>
+                </li>
+                <li>
+                    <h2>Cadeira Gamer Paystation</h2>
+                    <img src="CADEIRA GAMER PLAYSTATION.jpg" width="160spx">
+                    <p class="marca">Marca: PCYES</p>
+                    <p class="descricao">Dimensões do produto:	49D x 74.5W x 132H centímetros</p>
+                    <p class="descricao">Cor:	Branca</p>
+                    <p class="descricao">Peso máximo recomendado:	120 Quilogramas</p>
+                    <p class="preco">R$ 1476,29</p>
+                </li>
+                <li>
+                    <h2>Apple MacBook Pro</h2>
+                    <img src="Apple MacBook Pro.jpg" width="190spx">
+                    <p class="marca">Marca:	Apple</p>
+                    <p class="descricao">Processador M1 Pro da Apple</p>
+                    <p class="descricao">16 polegadas / CPU 10 core e GPU 16 core</p>
+                    <p class="descricao">16 GB RAM - 512 GB SSD</p>
+                    <p class="preco">R$ 32999,00</p>
+                </li>
+                <li>
+                    <h2>IPhone 13 Pro</h2>
+                    <img src="IPhone 13 Pro.jpg" width="240spx">
+                    <p class="marca">Marca	Apple</p>
+                    <p class="descricao">Número do modelo	MLVQ3BZ/A</p>
+                    <p class="descricao">Operadora de celulares e tecnologia sem fio	Desbloqueado</p>
+                    <p class="descricao">Sistema operacional	IOS 14</p>
+                    <p class="preco">R$ 8540,10</p>
+                </li>
+                <li>
+                    <h2>Smart TV Samsung QLED 4K</h2>
+                    <img src="Smart TV Samsung QLED 4K.jpg" width="220spx">
+                    <p class="marca">Marca: SAMSUNG</p>
+                    <p class="descricao">Tipo Do Produto: Eletrônicos</p>
+                    <p class="descricao">Resolução: 4K QLED</p>
+                    <p class="descricao">Tamanho da tela: 75 Polegadas</p>
+                    <p class="preco">R$ 17890,64</p>
+                </li>
+                <li>
+                    <h2>Projetor M19 6000 Lumens</h2>
+                    <img src="Projetor M19 6000 Lumens.jpg.crdownload" width="155spx">
+                    <p class="marca">Marca: Pima</p>
+                    <p class="descricao">Fabricante: Pima</p>
+                    <p class="descricao">Tipo Do Produto: Eletrônicos</p>
+                    <p class="descricao">Interface do hardware: VGA, Bluetooth, USB, HDMI</p>
+                    <p class="preco">R$ 1999,00</p>
+                </li>
+            </ul>
+        </main>
+    </body>
 </html>

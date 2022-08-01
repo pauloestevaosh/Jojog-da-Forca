@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="br-pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="widh=divece-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./reset.css">
+        <link rel="stylesheet" type="text/css" href="./Forca.css">
+        <script type="text/javascript" src="./Forca.js"></script>
+        <title>GroupSix</title>
+
+    </head>
+
+
+    <body>
+        <header>
+            <div class="Titulo">
+                <img src="Logo.jpeg" width="250px">
+    
+                <nav>
+                    <ul>
+                        <li class="ofDia">Oferta do Dias</li>
+                        <li class="botaoJogo"><a href="DescricaoJogo.htm">Ajuda</a></li>
+                        <li class="home"><a href="Forca.html">Home</a></li>
+                    </ul>
+                </nav>
+            </div>
+                
+        </header>
+        <main class="telaJogo">
+
+            <div class="box1">
+                <div class="box2">
+                     
+                    <div  id="textoauxiliar" >
+                        Letras Erradas: 
+                    </div>
+                    <div id="erradas"> </div>
+                    <div id="desconto">Desconto Atual : 50% </div>
+                    <div id="dicas"> 
+                    <div id="tituloDicas">
+                    
+                        <img id = "lampada" src="lampada.png" alt=""> 
+                
+                        Dicas: 
+                    
+                </div>
+                
+                    <div id="dicasNumeradas"> <!-- Aqui irão ser adicionadas as dicas via JavaScript-->
+                    </div>
+                
+                         <button id="botaoDica" onclick="mostraDicas()"disabled>Quero uma dica!</button>
+                
+                
+                     </div>
+                     <div id="msgErro"> </div>
+                     
+
+                </div>
+
+                <div id="imagem">
+                       <img id = "HomemDeFerro" src="HomemDeFerroFundo.png" alt="">
+                </div>
+                        
+                        
+
+            <div class="box3">
+          
+                <div id= "palavraSOrteada" > </div>
+            
+                <div id= "palavraFormada"> 
+                     Palavra Secreta
+             </div>
+            
+          
+            
+                <div class="letras" >            
+                    <button id="A" class="alfabeto" onclick="this.hidden = true; acaoBotao('A')" disabled>A</button>
+                    <button id="B" class="alfabeto" onclick="this.hidden = true; acaoBotao('B')" disabled>B</button>
+                    <button id="C" class="alfabeto" onclick="this.hidden = true; acaoBotao('C')" disabled>C</button>
+                    <button id="D" class="alfabeto" onclick="this.hidden = true; acaoBotao('D')" disabled>D</button>
+                    <button id="E" class="alfabeto" onclick="this.hidden = true; acaoBotao('E')" disabled>E</button>
+                    <button id="F" class="alfabeto" onclick="this.hidden = true; acaoBotao('F')" disabled>F</button>
+                    <button id="G" class="alfabeto" onclick="this.hidden = true; acaoBotao('G')" disabled>G</button>
+                    <button id="H" class="alfabeto" onclick="this.hidden = true; acaoBotao('H')" disabled>H</button>
+                </div>
+
+                <div class="letras">
+                    <button id="I" class="alfabeto" onclick="this.hidden = true; acaoBotao('I')" disabled>I</button>
+                    <button id="J" class="alfabeto" onclick="this.hidden = true; acaoBotao('J')" disabled>J</button>
+                    <button id="K" class="alfabeto" onclick="this.hidden = true; acaoBotao('K')" disabled>K</button>
+                    <button id="L" class="alfabeto" onclick="this.hidden = true; acaoBotao('L')" disabled>L</button>
+                    <button id="M" class="alfabeto" onclick="this.hidden = true; acaoBotao('M')" disabled>M</button>
+                    <button id="N" class="alfabeto" onclick="this.hidden = true; acaoBotao('N')" disabled>N</button>
+                    <button id="O" class="alfabeto" onclick="this.hidden = true; acaoBotao('O')" disabled>O</button>
+                    <button id="P" class="alfabeto" onclick="this.hidden = true; acaoBotao('P')" disabled>P</button>
+                    <button id="Q" class="alfabeto" onclick="this.hidden = true; acaoBotao('Q')" disabled>Q</button>
+                </div>
+            
+                <div class="letras">
+                    <button id="R" class="alfabeto" onclick="this.hidden = true; acaoBotao('R')" disabled>R</button>
+                    <button id="S" class="alfabeto" onclick="this.hidden = true; acaoBotao('S')" disabled>S</button>
+                    <button id="T" class="alfabeto" onclick="this.hidden = true; acaoBotao('T')" disabled>T</button>
+                    <button id="U" class="alfabeto" onclick="this.hidden = true; acaoBotao('U')" disabled>U</button>
+                    <button id="V" class="alfabeto" onclick="this.hidden = true; acaoBotao('V')" disabled>V</button>
+                    <button id="W" class="alfabeto" onclick="this.hidden = true; acaoBotao('W')" disabled>W</button>
+                    <button id="X" class="alfabeto" onclick="this.hidden = true; acaoBotao('X')" disabled>X</button>
+                    <button id="Y" class="alfabeto" onclick="this.hidden = true; acaoBotao('Y')" disabled>Y</button>
+                    <button id="Z" class="alfabeto" onclick="this.hidden = true; acaoBotao('Z')" disabled>Z</button>
+                </div>
+  
+            
+
+
+            
+            
+            
+            <div id="jogar">
+                <button id="botaoJogar" onclick="this.disabled = true; jogar();habBotao()" >Iniciar Jogo</button>
+            </div>
+            
+            </div>
+
+
+            
+        </main>
+  
+        </div>
+
+    </body>
+    
+</html>
